@@ -1,0 +1,29 @@
+.navbar{
+    height: 100px;
+}
+.navbar .wrapper{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.wrapper span{
+    /* font-weight: bold; */
+    font-size: 25px;
+}
+
+.navbar .social{
+    display: flex;
+    gap: 20px;
+}
+
+i{
+    font-size: 25px;
+}
+
+i:hover{
+    color: rgb(94 234 212);
+}
