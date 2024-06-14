@@ -1,15 +1,42 @@
 import React from 'react'
 import '../Sidebar.css'
+import {motion} from "framer-motion"
+
 const Links = () => {
 
-    const items=["HomePage", "About", "Skills", "Projects", "Contact"];
+  const variants = {
+    open:{
+      transition:{
+        staggerChildren:0.1,
+      },
+    },
+    closed:{
+      transition:{
+        staggerChildren:0.05,
+        staggerDirection: -1,
+      },
+    }
+  }
+
+  const itemVariants = {
+    open:{
+      y:0,
+      opacity:1,
+    },
+    closed:{
+     y:50,
+     opacity:0,
+    }
+  }
+
+  const items=["HomePage", "About", "Skills", "Projects", "Contact"];
   return (
-    <div className='links'>
+    <motion.div className='links' variants={variants}>
       {items.map(item=>(
-        <a href={`#${item}`} key={item}>
-            {item}</a>
+        <motion.a href={`#${item}`} key={item} variants={itemVariants}>
+            {item}</motion.a>
       ))}
-    </div>
+    </motion.div>
   )
 }
 
