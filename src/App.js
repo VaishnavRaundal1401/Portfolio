@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import HomePage from './components/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 function App() {

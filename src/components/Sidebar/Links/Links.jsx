@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Sidebar.css'
+import '../Sidebar.scss'
 import {motion} from "framer-motion"
 
 const Links = () => {
@@ -33,7 +33,7 @@ const Links = () => {
   return (
     <motion.div className='links' variants={variants}>
       {items.map(item=>(
-        <motion.a href={`#${item}`} key={item} variants={itemVariants}>
+        <motion.a href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale:1.2}} whileTap={{scale:0.8}}>
             {item}</motion.a>
       ))}
     </motion.div>
