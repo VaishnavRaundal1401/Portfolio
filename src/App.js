@@ -1,4 +1,5 @@
 import './App.scss';
+import About from './components/About/About';
 import HomePage from './components/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <Navbar/>
       <HomePage/>
     </section>
-    <section id="About">About</section>
+    <section id="About"><About/></section>
     <section id="Skills">Skills</section>
     <section id="Projects">projects</section>
     <section id="Contact">contact</section>
