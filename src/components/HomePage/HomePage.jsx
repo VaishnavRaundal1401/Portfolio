@@ -24,7 +24,7 @@ const HomePage = () => {
         <div className="wrapper">
             <motion.div variants={textVariants} initial="initial" animate="animate" className="textContainer">
                 <motion.h2 variants={textVariants}>VAISHNAV RAUNDAL</motion.h2>
-                <motion.h1 variants={textVariants}>Web Developer and Software Engineer</motion.h1>
+                <motion.h1 variants={textVariants}>Btech Student, pursuing Computer Science Engineering</motion.h1>
                 <motion.div className="buttons" variants={textVariants}>
                     <motion.button variants={textVariants}>My Work</motion.button>
                     <motion.button variants={textVariants}>Contact Me</motion.button>
