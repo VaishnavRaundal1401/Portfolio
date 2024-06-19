@@ -65,14 +65,6 @@ const Skills = () => {
                 <img src="./images/PLSQL.png" alt="" />
                 <h3>PL/SQL</h3>
             </motion.div>
-        
-        
-        
-        
-        
-        
-        
-        
         </div>
       </motion.div>
     </motion.div>
