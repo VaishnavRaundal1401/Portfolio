@@ -1,0 +1,44 @@
+.skills{
+    max-width: 1200px;
+    margin: auto;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .languages{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            margin-bottom: 40px;
+        }
+        .langImg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .languageCard{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3{
+                    margin-top: 15px;
+                    margin-right: 7px;
+                    color:rgba(94 234 212);
+                }
+            }
+        }
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+}

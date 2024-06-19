@@ -32,9 +32,9 @@ const About = () => {
                   <motion.span variants={variants}>
                   Welcome to my portfolio! My name is Vaishnav Popat Raundal and I'm from Nashik. Professionally, a Full Stack Developer, learning and working in IT field since 2021. I'm a passionate and dedicated Web Developer who loves to develop applications in MERN stack and i'm currently pursuing my Bachelor of Technology in Computer Science at PCCOE, Pune. As a upcomming Software Developer and, I strive to create impactful and innovative Software Products.
                   </motion.span>
-                  {/* <motion.div className="resumeButton" variants={variants}>
+                  <motion.div className="resumeButton" variants={variants}>
                     <motion.a href="/resume.pdf" download><motion.button variants={variants}>My Resume</motion.button></motion.a>
-                  </motion.div> */}
+                  </motion.div>
                 </motion.div>
 
                 <div className="education">
