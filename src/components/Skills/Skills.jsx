@@ -67,6 +67,48 @@ const Skills = () => {
             </motion.div>
         </div>
       </motion.div>
+
+
+      <div className="databaseAndFramework">
+      <motion.div className="languages" variants={variants}>
+        <h1>Databases:</h1>
+        <div className="langImg">
+            <motion.div className="languageCard" variants={variants}>
+                <img src="./images/MYSQL.png" alt="" />
+                <h3>MySQL</h3>
+            </motion.div>
+            <motion.div className="languageCard" variants={variants}>
+                <img src="./images/Oracle.jpg" alt="" style={{width:'120px'}}/>
+                <h3>Oracle DB</h3>
+            </motion.div>
+            <motion.div className="languageCard" variants={variants}>
+                <img src="./images/Mongo.png" alt="" />
+                <h3>Mongo DB</h3>
+            </motion.div>
+        </div>
+      </motion.div>
+
+
+      <motion.div className="languages" variants={variants}>
+        <h1>Frameworks:</h1>
+        <div className="langImg">
+            <motion.div className="languageCard" variants={variants}>
+                <img src="./images/Reactjs.png" alt="" style={{width:'140px'}}/>
+                <h3>ReactJs</h3>
+            </motion.div>
+            <motion.div className="languageCard" variants={variants}>
+                <img src="./images/Nodejs.png" alt=""/>
+                <h3>NodeJs</h3>
+            </motion.div>
+            <motion.div className="languageCard" variants={variants}>
+                <img src="./images/Expressjs.png" alt=""  style={{width:'170px'}}/>
+                <h3>ExpressJs</h3>
+            </motion.div>
+        </div>
+      </motion.div>
+      </div>
+
+
     </motion.div>
   )
 }

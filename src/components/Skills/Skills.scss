@@ -1,7 +1,7 @@
 .skills{
     max-width: 1200px;
+    height: 100vh;
     margin: auto;
-    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,7 @@
 
         h1{
             margin-bottom: 40px;
+            margin-top: 50px;
         }
         .langImg{
             display: flex;
@@ -27,6 +28,17 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                padding: 20px;
+
+                &:hover {
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    background-color: rgba(255, 255, 255, 0.082);
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.082);
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    scale: 1.2;
+                }
 
                 h3{
                     margin-top: 15px;
@@ -36,9 +48,19 @@
             }
         }
     }
+    .databaseAndFramework{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        h1{
+            margin-top: 70px;
+        }
+    }
     img{
         width: 100px;
         height: 100px;
-        margin-right: 20px;
+        // margin-right: 20px;
+        align-items: center;
+        justify-content: center;
     }
 }
