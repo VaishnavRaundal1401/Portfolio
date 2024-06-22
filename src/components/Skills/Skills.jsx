@@ -5,15 +5,15 @@ import {motion, useInView} from 'framer-motion'
 const Skills = () => {
 
     const ref = useRef()
-    const isInView = useInView(ref, {margin:"-100px"})
+    const isInView = useInView(ref, {margin: '0px 0px -100px 0px'})
     const variants={
         initial:{
-          x:-500,
-          opacity:0,
+            opacity:0,
+            x:-300,
         },
         animate:{
+            x:0,
           opacity:1,
-          x:0,
           transition:{
             duration:1,
             staggerChildren:0.3
@@ -22,9 +22,9 @@ const Skills = () => {
       }
   return (
     <motion.div className='skills' variants={variants} initial="initial"
-    // whileInView='animate'
+    whileInView='animate'
     ref = {ref}
-    animate={isInView && "animate"}
+    animate={isInView ? 'animate' : 'initial'}
     >
       <motion.div className="languages" variants={variants}>
         <h1>Languages:</h1>
@@ -50,7 +50,7 @@ const Skills = () => {
                 <h3>HTML</h3>
             </motion.div>
             <motion.div className="languageCard" variants={variants}>
-                <img src="./images/CSS.png" alt="" style={{width:'70px'}}/>
+                <img src="./images/CSS.png" alt="" />
                 <h3>CSS</h3>
             </motion.div>
             <motion.div className="languageCard" variants={variants}>
@@ -70,42 +70,42 @@ const Skills = () => {
 
 
       <div className="databaseAndFramework">
-      <motion.div className="languages" variants={variants}>
-        <h1>Databases:</h1>
-        <div className="langImg">
-            <motion.div className="languageCard" variants={variants}>
-                <img src="./images/MYSQL.png" alt="" />
-                <h3>MySQL</h3>
-            </motion.div>
-            <motion.div className="languageCard" variants={variants}>
-                <img src="./images/Oracle.jpg" alt="" style={{width:'120px'}}/>
-                <h3>Oracle DB</h3>
-            </motion.div>
-            <motion.div className="languageCard" variants={variants}>
-                <img src="./images/Mongo.png" alt="" />
-                <h3>Mongo DB</h3>
-            </motion.div>
-        </div>
-      </motion.div>
+        <motion.div className="languages" variants={variants}>
+            <h1>Databases:</h1>
+            <div className="langImg">
+                <motion.div className="languageCard" variants={variants}>
+                    <img src="./images/MYSQL.png" alt="" />
+                    <h3>MySQL</h3>
+                </motion.div>
+                <motion.div className="languageCard" variants={variants}>
+                    <img src="./images/Oracle.jpg" alt="" />
+                    <h3>Oracle DB</h3>
+                </motion.div>
+                <motion.div className="languageCard" variants={variants}>
+                    <img src="./images/Mongo.png" alt="" />
+                    <h3>Mongo DB</h3>
+                </motion.div>
+            </div>
+        </motion.div>
 
 
-      <motion.div className="languages" variants={variants}>
-        <h1>Frameworks:</h1>
-        <div className="langImg">
-            <motion.div className="languageCard" variants={variants}>
-                <img src="./images/Reactjs.png" alt="" style={{width:'140px'}}/>
-                <h3>ReactJs</h3>
-            </motion.div>
-            <motion.div className="languageCard" variants={variants}>
-                <img src="./images/Nodejs.png" alt=""/>
-                <h3>NodeJs</h3>
-            </motion.div>
-            <motion.div className="languageCard" variants={variants}>
-                <img src="./images/Expressjs.png" alt=""  style={{width:'170px'}}/>
-                <h3>ExpressJs</h3>
-            </motion.div>
-        </div>
-      </motion.div>
+        <motion.div className="languages" variants={variants}>
+            <h1>Frameworks:</h1>
+            <div className="langImg">
+                <motion.div className="languageCard" variants={variants}>
+                    <img src="./images/Reactjs.png" alt=""/>
+                    <h3>ReactJs</h3>
+                </motion.div>
+                <motion.div className="languageCard" variants={variants}>
+                    <img src="./images/Nodejs.png" alt=""/>
+                    <h3>NodeJs</h3>
+                </motion.div>
+                <motion.div className="languageCard" variants={variants}>
+                    <img src="./images/Expressjs.png" alt=""/>
+                    <h3>ExpressJs</h3>
+                </motion.div>
+            </div>
+        </motion.div>
       </div>
 
 
