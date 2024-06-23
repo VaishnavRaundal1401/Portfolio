@@ -5,26 +5,25 @@ import {motion, useInView} from 'framer-motion'
 const Skills = () => {
 
     const ref = useRef()
-    const isInView = useInView(ref, {margin: '0px 0px -100px 0px'})
+    const isInView = useInView(ref, {margin: '-100px'})
     const variants={
         initial:{
+            y:30,
             opacity:0,
-            x:-300,
         },
         animate:{
-            x:0,
-          opacity:1,
+            opacity:1,
+            y:0,
           transition:{
-            duration:1,
-            staggerChildren:0.3
+            duration:0.5,
+            staggerChildren:0.2
           }
         }
       }
   return (
     <motion.div className='skills' variants={variants} initial="initial"
-    whileInView='animate'
     ref = {ref}
-    animate={isInView ? 'animate' : 'initial'}
+    animate={isInView && 'animate'}
     >
       <motion.div className="languages" variants={variants}>
         <h1>Languages:</h1>
