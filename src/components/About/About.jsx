@@ -37,12 +37,12 @@ const About = () => {
                   </motion.div>
                 </motion.div>
 
-                <div className="education">
+                <motion.div className="education">
                   <motion.span variants={variants}>
                   My educational journey has been both challenging and rewarding. I completed my Diploma in Information Technology from Sou. Venutai Chavan Polytechnic, Pune, with a stellar percentage of 88.88%. Currently, I am pursuing my B.Tech in Computer Science, where I have maintained a CGPA of 8.4/10.
                   </motion.span>
                   <motion.h1 variants={variants}>Past Qualification</motion.h1>
-                </div>
+                </motion.div>
 
            </motion.div>
                 <div className='aimageContainer'>
