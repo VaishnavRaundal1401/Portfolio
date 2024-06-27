@@ -1,9 +1,11 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './HomePage.scss'
-import {motion} from 'framer-motion'
+import {motion, useInView} from 'framer-motion'
 
 const HomePage = () => {
 
+  const ref = useRef();
+  const isInView = useInView(ref, {margin:"-100px"})
   const textVariants ={
     initial:{
       x:-500,
@@ -22,7 +24,7 @@ const HomePage = () => {
   return (
     <div className='homepage'>
         <div className="wrapper">
-            <motion.div variants={textVariants} initial="initial" animate="animate" className="textContainer">
+            <motion.div variants={textVariants} ref = {ref} initial="initial" animate={isInView && "animate"} className="textContainer">
                 <motion.h2 variants={textVariants}>VAISHNAV RAUNDAL</motion.h2>
                 <motion.h1 variants={textVariants}>Btech Student, pursuing Computer Science Engineering</motion.h1>
                 <motion.div className="buttons" variants={textVariants}>
