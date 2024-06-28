@@ -2,6 +2,10 @@ import React, { useRef } from 'react'
 import './Projects.scss'
 import { FaGithub } from "react-icons/fa";
 import {motion, useInView} from 'framer-motion';
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaBootstrap } from "react-icons/fa";
+import { SiExpress, SiPhp, SiFramer } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
 
 const Projects = () => {
 
@@ -35,17 +39,36 @@ const Projects = () => {
                     <h3>NoteNimbus</h3>
                     <div className="cardContent">
                         <img src="./images/notesApp.png" alt="" />
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus molestiae error, ut, reiciendis culpa beatae cupiditate non voluptate provident molestias dicta totam iure? Alias vero dolore cumque, delectus nisi tempora.</span>
+                        <span>A user-friendly platform built using the MERN stack along with Bootstrap for styling. This application offers a seamless experience for managing notes, combining the power of modern web technologies to deliver a fast, reliable, and aesthetically pleasing solution.</span>
                     </div>
-                    <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                    <div className="github_techUsed">
+                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <div className="techused">
+                        <a href="/"><FaReact /></a>
+                        <a href="/"><FaNodeJs /></a>
+                        <a href="/"><SiExpress /></a>
+                        <a href="/"><DiMongodb /></a>
+                        <a href="/"><FaHtml5 /></a>
+                        <a href="/"><FaCss3Alt /></a>
+                        <a href="/"><FaBootstrap /></a>
+                      </div>
+                    </div>
                 </motion.div>
                 <motion.div className="Card" variants={variants} whileHover={{scale:'1.15'}}>
                     <h3>NewsSphere</h3>
                     <div className="cardContent">
                         <img src="./images/newsApp.png" alt="" />
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus molestiae error, ut, reiciendis culpa beatae cupiditate non voluptate provident molestias dicta totam iure? Alias vero dolore cumque, delectus nisi tempora.</span>
+                        <span>Offering real-time news updates with React and an external API.</span>
                     </div>
-                    <a href="https://github.com/VaishnavRaundal1401/News-Sphere" target="_blank" rel="noreferrer"><FaGithub /></a>
+                    <div className="github_techUsed">
+                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <div className="techused">
+                        <a href="/"><FaReact /></a>
+                        <a href="/"><FaHtml5 /></a>
+                        <a href="/"><FaCss3Alt /></a>
+                        <a href="/"><FaBootstrap /></a>
+                      </div>
+                    </div>
                 </motion.div>
             </div>
             <div className="projectCards">
@@ -53,17 +76,34 @@ const Projects = () => {
                     <h3>TravelBliss</h3>
                     <div className="cardContent">
                         <img src="./images/travelBliss.png" alt="" />
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus molestiae error, ut, reiciendis culpa beatae cupiditate non voluptate provident molestias dicta totam iure? Alias vero dolore cumque, delectus nisi tempora.</span>
+                        <span>Welcome to TravelBliss, offering essential resources and tools for a smooth travel experience. Built with HTML, CSS, Bootstrap, PHP, and MySQL.</span>
                     </div>
-                    <a href="https://github.com/VaishnavRaundal1401/TravelBliss" target="_blank" rel="noreferrer"><FaGithub /></a>
+                    <div className="github_techUsed">
+                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <div className="techused">
+                        <a href="/"><FaHtml5 /></a>
+                        <a href="/"><FaCss3Alt /></a>
+                        <a href="/"><FaBootstrap /></a>
+                        <a href="/"><SiPhp /></a>
+                        <a href="/"><GrMysql /></a>
+                      </div>
+                    </div>
                 </motion.div>
                 <motion.div className="Card" variants={variants} whileHover={{scale:'1.15'}}>
                     <h3>Portfolio</h3>
                     <div className="cardContent">
                         <img src="./images/portfolio.png" alt="" />
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus molestiae error, ut, reiciendis culpa beatae cupiditate non voluptate provident molestias dicta totam iure? Alias vero dolore cumque, delectus nisi tempora.</span>
+                        <span>Explore my projects with a seamless, animated experience.</span>
                     </div>
-                    <a href="https://github.com/VaishnavRaundal1401/Portfolio" target="_blank" rel="noreferrer"><FaGithub /></a>
+                    <div className="github_techUsed">
+                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <div className="techused">
+                        <a href="/"><FaReact /></a>
+                        <a href="/"><FaHtml5 /></a>
+                        <a href="/"><FaCss3Alt /></a>
+                        <a href="/"><SiFramer /></a>
+                      </div>
+                    </div>
                 </motion.div>
             </div>
         </motion.div>

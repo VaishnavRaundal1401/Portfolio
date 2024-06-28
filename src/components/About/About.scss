@@ -56,7 +56,7 @@
             font-size: 30px;
             color: rgba(94 234 212);
             @include mobile{
-                font-size: 15px;
+                // font-size: 15px;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
@@ -89,10 +89,8 @@
         h1{ 
             margin-bottom: 50px;
             margin-top:40px;
-            font-size: 30px;
             color: rgba(94 234 212);
             @include mobile{
-                font-size: 15px;
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
