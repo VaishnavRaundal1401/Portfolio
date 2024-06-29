@@ -1,5 +1,6 @@
 import './App.scss';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import HomePage from './components/HomePage/HomePage';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects/Projects';
@@ -14,7 +15,7 @@ function App() {
     <section id="About"><About/></section>
     <section id="Skills"><Skills/></section>
     <section id="Projects"><Projects/></section>
-    <section id="Contact">contact</section>
+    <section id="Contact"><Contact/></section>
     </div>
   );
 }
