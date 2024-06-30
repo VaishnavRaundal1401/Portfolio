@@ -8,7 +8,7 @@ const HomePage = () => {
   const isInView = useInView(ref, {margin:"-100px"})
   const textVariants ={
     initial:{
-      x:-300,
+      x:-200,
       opacity:0,
     },
     animate:{
