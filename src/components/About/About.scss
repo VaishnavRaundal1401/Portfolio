@@ -114,6 +114,15 @@
                 background-color: transparent;
                 color: white;
                 cursor: pointer;
+                background: linear-gradient(to right, rgba(94 234 212) 50%, 
+                transparent 50%);
+                background-size: 200% 100%;
+                background-position: right;
+                transition: background-position 0.2s ease-out;
+                &:hover{
+                    background-position: left;
+                    color:  rgb(15 23 42);
+                }
                 @include mobile{
                     padding: 10px;
                 }

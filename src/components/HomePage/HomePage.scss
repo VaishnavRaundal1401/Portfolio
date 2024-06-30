@@ -71,6 +71,15 @@
     color: white;
     cursor: pointer;
     margin-right: 10px;
+    background: linear-gradient(to right, rgba(94 234 212) 50%, 
+                rgb(15 23 42) 50%);
+                background-size: 200% 100%;
+                background-position: right;
+                transition: background-position 0.2s ease-out;
+                &:hover{
+                    background-position: left;
+                    color: rgb(15 23 42) ;
+                }
 }
 .imageContainer img{
     max-width: 400px;

@@ -17,8 +17,7 @@ const Navbar = () => {
               initial={{opacity:0, scale:0}}
               animate={{opacity:1, scale:1}}
               transition={{duration:0.5}} 
-            >
-            Vaishnav Raundal</motion.span>
+            ></motion.span>
             <motion.div className="social" 
               initial={{opacity:0, scale:0}}
               animate={{opacity:1, scale:1}}

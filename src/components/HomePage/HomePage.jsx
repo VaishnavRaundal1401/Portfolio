@@ -28,13 +28,13 @@ const HomePage = () => {
                 <motion.h2 variants={textVariants}>VAISHNAV RAUNDAL</motion.h2>
                 <motion.h1 variants={textVariants}>Btech Student, pursuing Computer Science Engineering</motion.h1>
                 <motion.div className="buttons" variants={textVariants}>
-                    <motion.button variants={textVariants}>My Work</motion.button>
-                    <motion.button variants={textVariants}>Contact Me</motion.button>
+                    <a href="#Projects"><motion.button variants={textVariants}>My Work</motion.button></a>
+                    <a href="#Contact"><motion.button variants={textVariants}>Contact Me</motion.button></a>
                 </motion.div>
             </motion.div>
         </div>
       <div className="imageContainer">
-        <img src="./images/homepage.jpeg" alt="" />
+        <img src="./images/homepage2.jpeg" alt="" />
       </div>
     </div>
   )

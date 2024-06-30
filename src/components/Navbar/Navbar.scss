@@ -17,9 +17,6 @@
 
 .wrapper span{
     font-size: 25px;
-    @include mobile{
-        display:none;
-    }
 }
 
 .navbar .social{

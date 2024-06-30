@@ -30,7 +30,7 @@ const Contact = () => {
         animate={isInView && "animate"} 
     >
       <motion.div className="txtContainer" variants={variants}>
-            <motion.h1 variants={variants}>Send me a message</motion.h1 >
+            <motion.h1 variants={variants}>Send me a message :)</motion.h1 >
             <motion.div className="item" variants={variants}>
                 <h2>Mail</h2>
                 <span>vaishnavraundal2016@gmail.com</span>
