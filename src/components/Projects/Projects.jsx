@@ -35,7 +35,7 @@ const Projects = () => {
          >
             <h1>Projects</h1>
             <div className="projectCards">
-                <motion.div className="Card" variants={variants} whileHover={{scale:'1.15'}}>
+                <motion.div className="Card" variants={variants} whileHover={{scale:'1.05'}}>
                     <h3>NoteNimbus</h3>
                     <div className="cardContent">
                         <img src="./images/notesApp.png" alt="" />
@@ -54,7 +54,7 @@ const Projects = () => {
                       </div>
                     </div>
                 </motion.div>
-                <motion.div className="Card" variants={variants} whileHover={{scale:'1.15'}}>
+                <motion.div className="Card" variants={variants} whileHover={{scale:'1.05'}}>
                     <h3>NewsSphere</h3>
                     <div className="cardContent">
                         <img src="./images/newsApp.png" alt="" />
@@ -72,7 +72,7 @@ const Projects = () => {
                 </motion.div>
             </div>
             <div className="projectCards">
-                <motion.div className="Card" variants={variants} whileHover={{scale:'1.15'}}>
+                <motion.div className="Card" variants={variants} whileHover={{scale:'1.05'}}>
                     <h3>TravelBliss</h3>
                     <div className="cardContent">
                         <img src="./images/travelBliss.png" alt="" />
@@ -89,7 +89,7 @@ const Projects = () => {
                       </div>
                     </div>
                 </motion.div>
-                <motion.div className="Card" variants={variants} whileHover={{scale:'1.15'}}>
+                <motion.div className="Card" variants={variants} whileHover={{scale:'1.05'}}>
                     <h3>Portfolio</h3>
                     <div className="cardContent">
                         <img src="./images/portfolio.png" alt="" />
