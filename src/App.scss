@@ -29,3 +29,9 @@ a{
     @content;
   }
 }
+
+@mixin tab {
+  @media(min-width: 739px) and (max-width:1150px){
+    @content;
+  }
+}

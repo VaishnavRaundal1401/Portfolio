@@ -15,7 +15,15 @@
                 margin-top: 30px;
                 margin-bottom: 40px;
             }
-
+            @include tab{
+                margin-top: 35px;
+                margin-bottom: 0px;
+            }
+        }
+        h3{
+            @include tab{
+                font-size: 20px;
+            }
         }
         .projectCards {
             max-width: 1200px;
@@ -25,12 +33,20 @@
             @include mobile{
                 flex-direction: column;
             }
+            @include tab{
+                flex-direction: column;
+            }
             .Card{
                 display: flex;
                 flex-direction: column;
                 padding:20px;
                 @include mobile{
                     padding: 0px 10px 10px 10px;
+                }
+                @include tab{
+                    padding: 2px 10px 2px 10px;
+                    margin-left: 5px;
+                    margin-right: 5px;
                 }
                 .cardContent{
                     display: flex;
@@ -43,6 +59,10 @@
                             max-width: 200px;
                             max-height: 70px;
                             font-size: 8px;
+                        }
+                        @include tab{
+                            max-height: 90px;
+                            font-size: 10px;
                         }
                     }
                     @include mobile{
@@ -58,12 +78,21 @@
                         height: 80px;
                         padding: 5px 5px 5px 0px;
                     }
+                    @include tab{
+                        width: 100px;
+                        height: 60px;
+                        padding: 5px 5px 5px 0px;
+                    }
                 }
                 a{
                     font-size: 25px;
                     padding-top: 10px;
                     @include mobile{
                         font-size: 15px;
+                    }
+                    @include tab{
+                        font-size: 20px;
+                        padding-top: 0px;
                     }
                 }
                 &:hover {

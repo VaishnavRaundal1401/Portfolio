@@ -9,7 +9,7 @@ const Contact = () => {
     const isInView = useInView(ref, {margin:"-100px"})
     const variants={
         initial:{
-          y:500,
+          y:300,
           opacity:0,
         },
         animate:{
