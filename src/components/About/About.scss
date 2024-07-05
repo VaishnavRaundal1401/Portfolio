@@ -6,22 +6,22 @@
     position: relative;
     overflow: hidden;
 
-    .aimageContainer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
+    // .aimageContainer {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: 1;
       
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover; 
-          opacity: 0.2;
-        }
+    //     img {
+    //       height: 100%;
+    //       width: 100%;
+    //       object-fit: cover; 
+    //       opacity: 0.2;
+    //     }
 
-    }
+    // }
 }
 
 .about{
@@ -30,20 +30,23 @@
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    // align-items: center;
     position: relative;
+    
     @include mobile{
         flex-direction: column;
+        justify-content: center;
     }
 
     .education{
         height: 100vh;
-        width: 50%;
+        width: 40%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
-        z-index: 2;
+        align-items: center;
         @include mobile{
             width: 100%;
             height: 50%;
@@ -51,22 +54,25 @@
         }
 
         h1{ 
-            margin-bottom: 50px;
-            margin-top:40px;
-            font-size: 30px;
+            margin-bottom: 10px;
+            // margin-top:40px;
+            font-size: 60px;
             color: rgba(94 234 212);
             @include mobile{
                 // font-size: 15px;
                 margin-top: 10px;
                 margin-bottom: 10px;
+                font-size: 50px;
             }
             @include tab{
                 margin-top: 20px;
                 margin-bottom: 25px;
+                font-size: 50px;
             }
         }
         span{
-            margin-bottom: 150px;
+            // margin-bottom: 150px;
+            font-size: 20px;
             @include mobile {
                 margin-bottom: 100px;
                 font-size: 10px;
@@ -80,34 +86,39 @@
 
     .myInfoContainer{
         max-height: 100vh;
-        width: 50%;
-        margin-top: 50px;
+        width: 60%;
+        // margin-top: 50px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
-        z-index: 2;
+        align-items: center;
         @include mobile{
             width: 100%;
             height: 50%;
-            margin-top: 90px;
+            margin-top: 50px;
             padding: 10px;
         }
 
         h1{ 
-            margin-bottom: 50px;
-            margin-top:40px;
+            margin-bottom: 10px;
+            margin-top:100px;
             color: rgba(94 234 212);
+            font-size: 60px;
             @include mobile{
                 margin-top: 10px;
                 margin-bottom: 10px;
+                font-size: 50px;
             }
             @include tab{
-                margin-top: 20px;
+                margin-top: 50px;
                 margin-bottom: 25px;
+                font-size: 50px;
             }
         }
         span{
             margin-bottom: 20px;
+            font-size: 20px;
             @include mobile{
                 font-size: 10px;
             }
@@ -120,7 +131,7 @@
             margin-top: 30px;
 
             @include mobile{
-                margin-top: 100px;
+                // margin-top: 100px;
             }
             button{
                 padding: 20px;
