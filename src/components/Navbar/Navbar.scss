@@ -25,4 +25,12 @@
 .navbar .social{
     display: flex;
     gap: 20px;
+    svg{
+        @include custom-tab{
+            font-size: 60px;
+        }
+    }
+    @include custom-tab{
+        gap: 40px;
+    }
 }
