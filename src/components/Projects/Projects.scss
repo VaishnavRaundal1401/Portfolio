@@ -19,10 +19,18 @@
                 margin-top: 35px;
                 margin-bottom: 0px;
             }
+            @include custom-tab{
+                margin-top: 30px;
+                margin-bottom: 40px;
+                font-size: 70px;
+            }
         }
         h3{
             @include tab{
                 font-size: 20px;
+            }
+            @include custom-tab{
+                font-size: 30px;
             }
         }
         .projectCards {
@@ -48,6 +56,9 @@
                     margin-left: 5px;
                     margin-right: 5px;
                 }
+                @include custom-tab{
+                    padding: 20px 5px 0px 5px;
+                }
                 .cardContent{
                     display: flex;
                     align-items: center;
@@ -63,6 +74,10 @@
                         @include tab{
                             max-height: 90px;
                             font-size: 10px;
+                        }
+                        @include custom-tab{
+                            max-height: 150px;
+                            font-size: 20px;
                         }
                     }
                     @include mobile{
@@ -83,6 +98,11 @@
                         height: 60px;
                         padding: 5px 5px 5px 0px;
                     }
+                    @include custom-tab{
+                          width: 400px;
+                          height: 200px; 
+                          padding: 20px 20px 20px 0px; 
+                    }
                 }
                 a{
                     font-size: 25px;
@@ -93,6 +113,9 @@
                     @include tab{
                         font-size: 20px;
                         padding-top: 0px;
+                    }
+                    @include custom-tab{
+                        font-size: 30px;
                     }
                 }
                 &:hover {

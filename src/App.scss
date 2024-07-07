@@ -35,3 +35,9 @@ a{
     @content;
   }
 }
+
+@mixin custom-tab {
+  @media (min-width: 760px) and (max-width: 1200px) and (min-height: 1020px) and (max-height: 2000px) {
+    @content;
+  }
+}

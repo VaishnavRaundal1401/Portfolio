@@ -25,6 +25,12 @@
         bottom: 0;
         top: unset;
     }
+    @include custom-tab{
+        height: 50%;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+    }
 }
 
 .homepage .wrapper{
@@ -44,6 +50,10 @@
     @include tab {
         font-size: 20px;
     }
+
+    @include custom-tab{
+        font-size: 40px;
+    }
 }
 .textContainer h1{
     font-size: 60px;
@@ -53,6 +63,10 @@
 
     @include tab{
         font-size: 30px;
+    }
+
+    @include custom-tab{
+        font-size: 60px;
     }
 }
 .wrapper .textContainer{
@@ -74,6 +88,13 @@
         align-items: center;
         text-align: center;
     }
+    @include custom-tab{
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .buttons button{
@@ -92,6 +113,12 @@
                     background-position: left;
                     color: rgb(15 23 42) ;
                 }
+
+                @include custom-tab{
+                    margin-top: 10px;
+                    padding: 40px 60px 40px 60px;
+                    font-size: 20px;
+                }
 }
 .imageContainer img{
     max-width: 400px;
@@ -108,6 +135,10 @@
     @include tab{
         max-width: 250px;
         max-height: 250px;
+    }
+    @include custom-tab{
+        max-width: 400px;
+        max-height: 400px;
     }
     
 }
