@@ -39,7 +39,7 @@ const Projects = () => {
                     <h3>NoteNimbus</h3>
                     <div className="cardContent">
                         <img src="./images/notesApp.png" alt="" />
-                        <span>A user-friendly platform built using the MERN stack along with Bootstrap for styling. This application offers a seamless experience for managing notes, combining the power of modern web technologies to deliver a fast, reliable, and aesthetically pleasing solution.</span>
+                        <span>This application offers a seamless experience for managing notes, combining the power of modern web technologies to deliver a fast, reliable, and aesthetically pleasing solution.</span>
                     </div>
                     <div className="github_techUsed">
                       <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
