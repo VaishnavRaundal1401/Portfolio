@@ -6,6 +6,7 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaBootstrap } from "react-icons/
 import { SiExpress, SiPhp, SiFramer } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { GrMysql } from "react-icons/gr";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Projects = () => {
 
@@ -61,7 +62,7 @@ const Projects = () => {
                         <span>Offering real-time news updates with React and an external API.</span>
                     </div>
                     <div className="github_techUsed">
-                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <a href="https://github.com/VaishnavRaundal1401/News-Sphere" target="_blank" rel="noreferrer"><FaGithub /></a>
                       <div className="techused">
                         <a href="/"><FaReact /></a>
                         <a href="/"><FaHtml5 /></a>
@@ -79,7 +80,7 @@ const Projects = () => {
                         <span>Welcome to TravelBliss, offering essential resources and tools for a smooth travel experience. Built with HTML, CSS, Bootstrap, PHP, and MySQL.</span>
                     </div>
                     <div className="github_techUsed">
-                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <a href="https://github.com/VaishnavRaundal1401/TravelBliss" target="_blank" rel="noreferrer"><FaGithub /></a>
                       <div className="techused">
                         <a href="/"><FaHtml5 /></a>
                         <a href="/"><FaCss3Alt /></a>
@@ -90,18 +91,23 @@ const Projects = () => {
                     </div>
                 </motion.div>
                 <motion.div className="Card" variants={variants} whileHover={{scale:'1.05'}}>
-                    <h3>Portfolio</h3>
+                    <h3>BookBazzar</h3>
                     <div className="cardContent">
-                        <img src="./images/portfolio.png" alt="" />
-                        <span>Explore my projects with a seamless, animated experience.</span>
+                        <img src="./images/BookBazzar.png" alt="" />
+                        <span>BookBazzar is an online marketplace for buying and selling books.</span>
                     </div>
                     <div className="github_techUsed">
-                      <a href="https://github.com/VaishnavRaundal1401/note-nimbus" target="_blank" rel="noreferrer"><FaGithub /></a>
+                      <a href="https://github.com/VaishnavRaundal1401/BookBazzar" target="_blank" rel="noreferrer"><FaGithub /></a>
                       <div className="techused">
                         <a href="/"><FaReact /></a>
+                        <a href="/"><FaNodeJs /></a>
+                        <a href="/"><SiExpress /></a>
+                        <a href="/"><DiMongodb /></a>
                         <a href="/"><FaHtml5 /></a>
                         <a href="/"><FaCss3Alt /></a>
+                        <a href="/"><FaBootstrap /></a>
                         <a href="/"><SiFramer /></a>
+                        <a href="/"><RiTailwindCssFill /></a>
                       </div>
                     </div>
                 </motion.div>
